@@ -3,6 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 const requestProxy = require('express-request-proxy');
 
+console.log(`Hello, ${process.env.student || 'students'}`)
+
 function proxyGitHub(request, response){
   console.log(`Routing GitHub request for ${request.params[0]}`);
   (requestProxy({
