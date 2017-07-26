@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "opn http://localhost:4000 && nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Bob McBobbypants",
   "license": "MIT",
